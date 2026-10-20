@@ -1,7 +1,7 @@
 ---
 name: network-engineer
 description: This skill should be used when a network engineer pastes a config snippet (Junos, Cisco/Arista, Huawei or Nokia OLT), a change request, routing tables, logs or a text diagram and asks "review this change", "is this config safe", "why is this route not preferred", "no BGP to the RSP", "explain this policy" or "build a lab to test this". Covers IGP, BGP, MPLS and the RSP NNI. Local only.
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Network Engineer Copilot

@@ -9,7 +9,7 @@ $ARGUMENTS
 
 Steps:
 1. Apply `copilot-common` privacy rules. If a screenshot was provided, transcribe it first (screenshot-reader) into a READ FROM IMAGE block.
-2. Walk the layers in order: physical, L2, IGP, BGP, MPLS/services, aggregation to RSP NNI. Stop at the first layer that fails. Use the layer table in SKILL.md and the command table in `references/verification-commands.md` to name the exact commands for the vendor in the paste.
+2. Walk the layers in order: physical, L2, IGP, BGP, MPLS/services, aggregation to RSP NNI. Stop at the first layer that fails. Use the layer table in SKILL.md and the command table in `${CLAUDE_PLUGIN_ROOT}/skills/network-engineer/references/verification-commands.md` to name the exact commands for the vendor in the paste.
 3. Output the Troubleshoot template: LIKELY FAULT LAYER, CONFIDENCE, EVIDENCE (✓ / ✗ / ?), NEXT CHECKS (numbered, each eliminates a layer, with the exact command per vendor), IF THAT SHOWS ... THEN ..., SUGGESTED TICKET NOTE.
 4. If the vendor cannot be determined from the paste, give the command for the two most likely platforms and ask which one applies.
 5. If the evidence does not reach the layer the engineer suspects, say DO NOT CONCLUDE YET and give the single most discriminating check.
